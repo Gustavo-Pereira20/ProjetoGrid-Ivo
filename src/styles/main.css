@@ -1,10 +1,14 @@
+
 .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: white;
-    height: 10vh;
-    padding: 40px 60px;
+    padding: 25px;
 }
     
 .header__container{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +29,6 @@
     display: flex;
     justify-content: center;
     gap: 25px;
-
 }
 
 .header__link{
@@ -36,8 +39,8 @@
 
 .header__social{
     width: 10%;
+    text-align: center;
 }
-
 
 .banner{
     height:45vh;
@@ -57,6 +60,7 @@
 
 .banner__subtitle{
     color:white;
+    text-align: center;
     margin:10px 0;
 }
 
@@ -66,53 +70,82 @@
 
 .banner__title--highlight{
     color:red;
-}
+}   
 
 .categories{
-    height: 45vh;
-    padding: 40px;
+    padding: 50px;
 }
 
 .categories__title{    
-    width: 15%;
-    margin: 0px auto;
+    text-align: center;
+    margin: 0px 0px 25px;
+    color:#2f3554;
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .categories__list{
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .category-item{
-    border: 1px solid gray ;
+    border: 2px solid rgb(167, 167, 167) ;
     display: flex;
     flex-direction: column;
-    width: 150px;
-    padding: 50px 25px;
-    border-radius: 15px;
     justify-content: center;
     align-items: center;
+    padding: 35px;
+    border-radius: 15px;
+    gap: 20px;
+    transition: ease 1.2;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    transition: transform 0.5s ease;
+}
+
+.category-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 1px 2px 1px rgb(0, 0, 0);
 }
 
 .button{
-    background-color: orange;
-    padding:10px 25px;
-    color:black;
-    font-family: "Roboto",sans-serif;
+    background-color: rgb(222, 145, 1);
+    padding: 10px 25px;
+    color:#2f3554;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
     font-size: 14px;
+    border:transparent;
+    transition: 0.5s ease;
+}
+
+.button:hover{
+    background-color: rgb(168, 111, 4);
+    cursor:pointer;
 }
 
 .category-item img{
-    width:100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border-radius: 100%;
 }
 
 .products__grid img{
-    width:200px;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+.products__grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,550px);
+    padding: 75px;
+    grid-gap: 25px;
+}
 
 .footer{
     display: block;
@@ -127,27 +160,94 @@
 
 }
 
-.products__title{
-    background: white;
-   
-}
-
 .card__image-wrapper{
-    max-width: 250px;
-    border: 2px solid black;
-    border-radius: 8px;
+    max-width: 100%;
+    height: 50%;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(3,5,0,1);
-    transition: transform 0.5s ease; 
-    
+    border-radius: 8px 8px 0 0;
 }
 
-.card__image-wrapper:hover{
-    transform: scale(1.2);
+.card:hover{
+    transform: scale(1.05);
     cursor: pointer;
 }
 
-.card__body{
+
+.card{
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 2px 6px rgba(3,5,0,0.5);
+    height: 100%; 
+    background-color: white;
+}
+
+.products{
+    background-color: #EFFAF0;
     
+;
+}
+
+.card__title{
+    font-family: "Roboto",sans-serif;
+    font-size: 24px;
+    color:rgb(1, 1, 96);
+}
+
+.card__price{
+    font-size: 24px;
+    color: red;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+}
+
+.card__description{
+    font-family: "Roboto",sans-serif;
+}
+
+.card__body{
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.card__footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #1d1d1d;
+    padding-top: 25px;
+}
+
+.products__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#2f3554;
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 25px;
+}
+
+.button--primary{
+    display: flex;
+    justify-content: center;
+    margin:  0 auto;
+    width: 200px;
+    border-radius: 8px;
+    background-color: red;
+    padding: 20px 30px;
+    width: 25%;
+    font-size: 22px;
+    color:white;
+    transition: 0.5s ease;
+}
+
+.button--primary:hover{
+    background-color:darkred ;
+}
+
+.products__container{
+    padding-bottom: 100px;
 }
