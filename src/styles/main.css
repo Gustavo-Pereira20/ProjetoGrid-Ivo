@@ -1,0 +1,153 @@
+.header{
+    background: white;
+    height: 10vh;
+    padding: 40px 60px;
+}
+    
+.header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__logo{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+}
+
+.header__nav{
+    width: 60%;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.header__link{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.header__social{
+    width: 10%;
+}
+
+
+.banner{
+    height:45vh;
+    background:linear-gradient(35deg,rgba(0, 0,0, 0.5) 0%, rgba(0, 0,0, 0.5) 30%, rgba(0, 0,0, 0.5) 100%), url("https://images.pexels.com/photos/12034622/pexels-photo-12034622.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner__content{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+    font-family: "Roboto",sans-serif;
+}
+
+.banner__subtitle{
+    color:white;
+    margin:10px 0;
+}
+
+.banner__title{
+    color:white
+}
+
+.banner__title--highlight{
+    color:red;
+}
+
+.categories{
+    height: 45vh;
+    padding: 40px;
+}
+
+.categories__title{    
+    width: 15%;
+    margin: 0px auto;
+}
+
+.categories__list{
+    display: flex;
+    gap: 25px;
+}
+
+.category-item{
+    border: 1px solid gray ;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    padding: 50px 25px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    background-color: orange;
+    padding:10px 25px;
+    color:black;
+    font-family: "Roboto",sans-serif;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.category-item img{
+    width:100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.products__grid img{
+    width:200px;
+}
+
+
+.footer{
+    display: block;
+    background-color: rgb(45, 45, 94);
+    padding: 40px 20px;
+}
+
+.footer__text{
+    display: block;
+    text-align: center;
+    color: white;
+
+}
+
+.products__title{
+    background: white;
+   
+}
+
+.card__image-wrapper{
+    max-width: 250px;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(3,5,0,1);
+    transition: transform 0.5s ease; 
+    
+}
+
+.card__image-wrapper:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.card__body{
+    
+}
